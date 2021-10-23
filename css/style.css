@@ -1,0 +1,145 @@
+* {
+  /* margin: 0; */
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 13px; */
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+/*  nav Section  */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav * {
+  display: inline;
+  margin: 8px;
+  cursor: pointer;
+}
+nav > a {
+  font-size: 13px;
+}
+nav > .apps-icon {
+  opacity: 0.6;
+  margin-top: 11px !important;
+}
+nav > button {
+  margin-right: 15px !important ;
+  padding: 10px 25px;
+  color: white;
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 5px;
+}
+
+/*  main Section  */
+main {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: column;
+}
+main .google-image {
+  margin-top: 99px;
+}
+main .search {
+  border: 1px solid #70757a2e;
+  border-radius: 25px;
+  width: 38vw;
+  margin: 23px 30px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+main .search:hover,
+main .search input[type="text"]:focus .search {
+  box-shadow: 0 0 12px 0px #70757a2e;
+}
+main .search > * {
+  margin: 10px 15px;
+}
+main .search input[type="text"] {
+  border: none;
+}
+main .search input[type="text"]:focus {
+  outline: none;
+}
+main .search .search-icon {
+  width: 20px;
+  opacity: 0.4;
+}
+main .btn {
+  font-size: 14px;
+  margin: 5px;
+}
+main .btn button{
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #F8F9FA;
+  border: none;
+}
+main .btn button:hover{
+  box-shadow:  0 0 2px 0 #70757a;
+}
+main .btn button:focus{
+  border: 0.5px solid #1a73e8;
+  border-radius: 5px;
+  box-shadow : none;
+}
+main .offered {
+  font-size: 13px;
+  margin-top: 10px;
+}
+main .offered span {
+  color: #1a0dab;
+}
+
+main .microphone-icon,
+main .search-icon,
+main span,
+main button {
+  cursor: pointer;
+}
+
+/*  footer Section  */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f2f2f2;
+}
+footer *:not(hr) {
+  color: #70757a;
+  margin-left: 30px;
+  font-size: 15px;
+}
+footer > hr {
+  height: 0.5px;
+  background-color: #70757a2e;
+  border: none;
+}
+footer > .helping {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px !important;
+}
+footer > .helping > * > * {
+  margin-left: 25px;
+  font-size: 14px;
+}
+footer > .helping > .helping-left {
+  margin-left: -5px;
+}
+footer > .helping > .helping-right {
+  margin-right: 15px;
+}
